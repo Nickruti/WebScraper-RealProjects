@@ -20,7 +20,11 @@ print('''----Google Dorks Category----
         13 - Various Online Devices	
         14 - Advisories and Vulnerabilities''')
 category = input("Give Selected Category Number :")
-driver = webdriver.Chrome(executable_path= r".\chromedriver.exe")
+
+opts = webdriver.ChromeOptions()
+opts.headless =True
+
+driver = webdriver.Chrome(executable_path= r".\chromedriver.exe", options=opts)
 driver.implicitly_wait(10)
 driver.get('https://www.exploit-db.com/google-hacking-database?category='+ category)
 
