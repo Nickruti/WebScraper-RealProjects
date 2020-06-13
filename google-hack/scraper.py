@@ -4,6 +4,21 @@ import time
 import os
 import json
 
+print('''----Google Dorks Category----
+        1 - Footholds
+        2 - Files Containing Usernames
+        3 - Sensitive Directories
+        4 - Web Server Detection
+        5 - Vulnerable Files
+        6 - Vulnerable Servers
+        7 - Error Messages
+        8 - Files Containing Juicy Info
+        9 - Files Containing Passwords	
+        10 - Sensitive Online Shopping Info
+        11 - Network or Vulnerability Data
+        12 - Pages Containing Login Portals
+        13 - Various Online Devices	
+        14 - Advisories and Vulnerabilities''')
 category = input("Give Selected Category Number :")
 driver = webdriver.Chrome(executable_path= r".\chromedriver.exe")
 driver.implicitly_wait(10)
@@ -32,14 +47,3 @@ for line in word_list:
     text_file.write(line)
     text_file.write('\n')
 driver.close()
-
-
-
-
-
-
-
-
-#for  in driver.find_elements_by_id('exploits-table'):
-#   data = [item.text for item in table.find_elements_by_xpath(".//*[self::td or self::th]")]
-#    print(data)
