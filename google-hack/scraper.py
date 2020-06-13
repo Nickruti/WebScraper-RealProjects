@@ -5,7 +5,7 @@ import os
 import json
 
 category = input("Give Selected Category Number :")
-driver = webdriver.Chrome(executable_path= r"D:\PythonL\Learning\Webscraper\chromedriver.exe")
+driver = webdriver.Chrome(executable_path= r".\chromedriver.exe")
 driver.implicitly_wait(10)
 driver.get('https://www.exploit-db.com/google-hacking-database?category='+ category)
 
