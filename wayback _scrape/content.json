@@ -1,0 +1,1 @@
+"User-agent: *\nDisallow: */demo-thank-you\nDisallow: */thank-you\nSitemap: https://www.freshworks.com/sitemaps/index.xml\nSitemap: https://freshservice.com/sitemaps/index.xml\nSitemap: https://freshdesk.com/sitemaps/index.xml"
